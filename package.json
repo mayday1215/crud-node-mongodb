@@ -1,0 +1,28 @@
+{
+  "name": "crud-node-mongodb",
+  "version": "1.0.0",
+  "description": "mongodb版学生管理系统",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayday1215/crud-node-mongodb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayday1215/crud-node-mongodb/issues"
+  },
+  "homepage": "https://github.com/mayday1215/crud-node-mongodb#readme",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "express-art-template": "^1.0.1",
+    "mongoose": "^5.9.10"
+  }
+}

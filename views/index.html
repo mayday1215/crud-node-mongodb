@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">名字</th>
+        <th scope="col">年龄</th>
+        <th scope="col">性别</th>
+        <th scope="col">操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{each students}}
+      <tr>
+        <th scope="row">{{$index+1}}</th>
+        <td>{{$value.name}}</td>
+        <td>{{$value.age}}</td>
+        <td>{{$value.gender == 1 ? '女' : '男'}}</td>
+        <td>
+          <a href="/students/edit?id={{$value.id}}" type="button" class="btn btn-success">编辑</a>
+          <a href="/students/del?id={{$value.id}}" type="button" class="btn btn-danger">删除</a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  <a href="/students/add" type="button" class="btn btn-success">添加</a>
+
+</body>
+</html>
